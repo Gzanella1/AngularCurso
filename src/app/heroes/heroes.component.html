@@ -1,0 +1,29 @@
+<h2>{{ hero.name }} Details </h2>
+<div><span>id:</span>{{hero.id}}</div>
+<div><span>name:</span>{{hero.name}}</div>
+<div>name aa: {{hero.name}}</div>
+
+
+<div>
+    <label for="name">Hero nome</label>
+    <!--o formulario edita o nome do heroi, que é passado no ngModel-->
+    <input id="name" placeholder="nome" type="text" [(ngModel)]="hero.name">
+</div>
+
+
+<!--
+    ESLint: mostra onde eu estou errando 
+    comando para baixar:  ng add @angular-eslint/schematics
+
+    ### aqui vai dar um erro posis os parentes estão antes dos colchetes 
+
+    <div>
+        <label for="name">Hero nome</label>
+        <input id="name" placeholder="nome" type="text" ([ngModel])="hero.name">
+    </div>
+
+-->
+
+
+
+
